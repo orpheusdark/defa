@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Webcrumbs Plugin</title>
+    <title>JB & Family</title>
     <style>
       @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css);
       
@@ -534,7 +534,18 @@ body {
   background: #00A7E1;
   overflow: hidden;
 }
-
+.loader-wrapper {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #00A7E1;
+      z-index: 1000;
+    }
 .loader {
   postion: relative;
   display: flex;
@@ -582,6 +593,11 @@ body {
     transform: translateX(30px) scale(1);
   }
 }
+      /* Hide loader on content display */
+    .hidden {
+      display: none;
+    }
+      
     </style>
   </head>
   <body>
@@ -597,7 +613,7 @@ body {
             <h1 class="text-4xl font-title text-neutral-950">JB &amp; Family</h1> 
             <nav class="flex gap-6 text-neutral-950"> <a href="#home" class="hover:underline">Home</a> 
                 <a href="#destinations" class="hover:underline">Destinations</a> 
-                <a href="#about" class="hover:underline">About</a> 
+                <a href="about.html" class="hover:underline">About</a> 
                 <a href="#contact" class="hover:underline">Contact</a> 
             </nav> 
         </header> 
@@ -649,8 +665,14 @@ body {
                         <p class="text-neutral-950 text-sm">&amp;JB & Family</p> 
                     </footer>
     </div>
-
-
-  </div>
+ </div>
+ <script>
+    // Hide loader when page content is fully loaded
+    document.addEventListener("DOMContentLoaded", function() {
+      const loader = document.getElementById("loader");
+      loader.classList.add("hidden");
+    });
+  </script>
+    
   </body>
 </html>
