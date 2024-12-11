@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JB and Family</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Ubuntu', sans-serif;
+      background: linear-gradient(135deg, #ffffff, #d4d4d4);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 24px;
+    }
+
+    #webcrumbs {
+      width: 100%;
+      max-width: 900px;
+      background: linear-gradient(to right, #daf3f3, #e5e7eb);
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      padding: 32px;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 24px;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      color: #2c281f;
+      margin-bottom: 8px;
+    }
+
+    header p {
+      color: #706654;
+      font-size: 1.2rem;
+    }
+
+    .family-section {
+      margin-top: 24px;
+    }
+
+    .family-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+    }
+
+    .family-member {
+      text-align: center;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      padding: 16px;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .family-member:hover {
+      transform: scale(1.05);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .family-member img {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-bottom: 8px;
+    }
+
+    .family-member h3 {
+      font-size: 1rem;
+      color: #2c281f;
+    }
+
+    .family-member p {
+      font-size: 0.9rem;
+      color: #706654;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="webcrumbs">
+    <header>
+      <h1>JB and Family</h1>
+      <p>Welcome to our family page!</p>
+    </header>
+    <main class="family-section">
+      <h2 class="text-2xl font-semibold">Meet the Family</h2>
+      <div class="family-grid">
+        <div class="family-member">
+          <img src="https://via.placeholder.com/100" alt="Family Member 1">
+          <h3>John</h3>
+          <p>Father</p>
+        </div>
+        <div class="family-member">
+          <img src="https://via.placeholder.com/100" alt="Family Member 2">
+          <h3>Jane</h3>
+          <p>Mother</p>
+        </div>
+        <div class="family-member">
+          <img src="https://via.placeholder.com/100" alt="Family Member 3">
+          <h3>Jack</h3>
+          <p>Son</p>
+        </div>
+        <div class="family-member">
+          <img src="https://via.placeholder.com/100" alt="Family Member 4">
+          <h3>Jill</h3>
+          <p>Daughter</p>
+        </div>
+        <div class="family-member">
+          <img src="https://via.placeholder.com/100" alt="Family Member 5">
+          <h3>Joe</h3>
+          <p>Uncle</p>
+        </div>
+        <div class="family-member">
+          <img src="https://via.placeholder.com/100" alt="Family Member 6">
+          <h3>Anna</h3>
+          <p>Aunt</p>
+        </div>
+        <div class="family-member">
+          <img src="https://via.placeholder.com/100" alt="Family Member 7">
+          <h3>Mike</h3>
+          <p>Cousin</p>
+        </div>
+        <div class="family-member">
+          <img src="https://via.placeholder.com/100" alt="Family Member 8">
+          <h3>Sara</h3>
+          <p>Cousin</p>
+        </div>
+      </div>
+    </main>
+  </div>
+</body>
+
+</html>
