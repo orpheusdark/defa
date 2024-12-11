@@ -1,566 +1,754 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About</title>
-    <style>
-      @import url(https://fonts.googleapis.com/css2?family=Ubuntu&display=swap);
-      
-      *,
-      :after,
-      :before {
-        border: 0 solid #e5e7eb;
-        box-sizing: border-box;
-      }
-      :after,
-      :before {
-        --tw-content: "";
-      }
-      :host,
-      html {
-        line-height: 1.5;
-        -webkit-text-size-adjust: 100%;
-        font-family:
-          Ubuntu,
-          ui-sans-serif,
-          system-ui,
-          sans-serif,
-          Apple Color Emoji,
-          Segoe UI Emoji,
-          Segoe UI Symbol,
-          Noto Color Emoji;
-        font-feature-settings: normal;
-        font-variation-settings: normal;
-        -moz-tab-size: 4;
-        tab-size: 4;
-        -webkit-tap-highlight-color: transparent;
-      }
-      body {
-        line-height: inherit;
-        margin: 0;
-      }
-      hr {
-        border-top-width: 1px;
-        color: inherit;
-        height: 0;
-      }
-      abbr:where([title]) {
-        text-decoration: underline dotted;
-      }
-      h1,
-      h2,
-      h3,
-      h4,
-      h5,
-      h6 {
-        font-size: inherit;
-        font-weight: inherit;
-      }
-      a {
-        color: inherit;
-        text-decoration: inherit;
-      }
-      b,
-      strong {
-        font-weight: bolder;
-      }
-      code,
-      kbd,
-      pre,
-      samp {
-        font-family:
-          ui-monospace,
-          SFMono-Regular,
-          Menlo,
-          Monaco,
-          Consolas,
-          Liberation Mono,
-          Courier New,
-          monospace;
-        font-feature-settings: normal;
-        font-size: 1em;
-        font-variation-settings: normal;
-      }
-      small {
-        font-size: 80%;
-      }
-      sub,
-      sup {
-        font-size: 75%;
-        line-height: 0;
-        position: relative;
-        vertical-align: baseline;
-      }
-      sub {
-        bottom: -0.25em;
-      }
-      sup {
-        top: -0.5em;
-      }
-      table {
-        border-collapse: collapse;
-        border-color: inherit;
-        text-indent: 0;
-      }
-      button,
-      input,
-      optgroup,
-      select,
-      textarea {
-        color: inherit;
-        font-family: inherit;
-        font-feature-settings: inherit;
-        font-size: 100%;
-        font-variation-settings: inherit;
-        font-weight: inherit;
-        letter-spacing: inherit;
-        line-height: inherit;
-        margin: 0;
-        padding: 0;
-      }
-      button,
-      select {
-        text-transform: none;
-      }
-      button,
-      input:where([type="button"]),
-      input:where([type="reset"]),
-      input:where([type="submit"]) {
-        -webkit-appearance: button;
-        background-color: transparent;
-        background-image: none;
-      }
-      :-moz-focusring {
-        outline: auto;
-      }
-      :-moz-ui-invalid {
-        box-shadow: none;
-      }
-      progress {
-        vertical-align: baseline;
-      }
-      ::-webkit-inner-spin-button,
-      ::-webkit-outer-spin-button {
-        height: auto;
-      }
-      [type="search"] {
-        -webkit-appearance: textfield;
-        outline-offset: -2px;
-      }
-      ::-webkit-search-decoration {
-        -webkit-appearance: none;
-      }
-      ::-webkit-file-upload-button {
-        -webkit-appearance: button;
-        font: inherit;
-      }
-      summary {
-        display: list-item;
-      }
-      blockquote,
-      dd,
-      dl,
-      figure,
-      h1,
-      h2,
-      h3,
-      h4,
-      h5,
-      h6,
-      hr,
-      p,
-      pre {
-        margin: 0;
-      }
-      fieldset {
-        margin: 0;
-      }
-      fieldset,
-      legend {
-        padding: 0;
-      }
-      menu,
-      ol,
-      ul {
-        list-style: none;
-        margin: 0;
-        padding: 0;
-      }
-      dialog {
-        padding: 0;
-      }
-      textarea {
-        resize: vertical;
-      }
-      input::placeholder,
-      textarea::placeholder {
-        color: #9ca3af;
-        opacity: 1;
-      }
-      [role="button"],
-      button {
-        cursor: pointer;
-      }
-      :disabled {
-        cursor: default;
-      }
-      audio,
-      canvas,
-      embed,
-      iframe,
-      img,
-      object,
-      svg,
-      video {
-        display: block;
-        vertical-align: middle;
-      }
-      img,
-      video {
-        height: auto;
-        max-width: 100%;
-      }
-      [hidden] {
-        display: none;
-      }
-      *,
-      :after,
-      :before {
-        --tw-border-spacing-x: 0;
-        --tw-border-spacing-y: 0;
-        --tw-translate-x: 0;
-        --tw-translate-y: 0;
-        --tw-rotate: 0;
-        --tw-skew-x: 0;
-        --tw-skew-y: 0;
-        --tw-scale-x: 1;
-        --tw-scale-y: 1;
-        --tw-pan-x: ;
-        --tw-pan-y: ;
-        --tw-pinch-zoom: ;
-        --tw-scroll-snap-strictness: proximity;
-        --tw-gradient-from-position: ;
-        --tw-gradient-via-position: ;
-        --tw-gradient-to-position: ;
-        --tw-ordinal: ;
-        --tw-slashed-zero: ;
-        --tw-numeric-figure: ;
-        --tw-numeric-spacing: ;
-        --tw-numeric-fraction: ;
-        --tw-ring-inset: ;
-        --tw-ring-offset-width: 0px;
-        --tw-ring-offset-color: #fff;
-        --tw-ring-color: rgba(59, 130, 246, 0.5);
-        --tw-ring-offset-shadow: 0 0 #0000;
-        --tw-ring-shadow: 0 0 #0000;
-        --tw-shadow: 0 0 #0000;
-        --tw-shadow-colored: 0 0 #0000;
-        --tw-blur: ;
-        --tw-brightness: ;
-        --tw-contrast: ;
-        --tw-grayscale: ;
-        --tw-hue-rotate: ;
-        --tw-invert: ;
-        --tw-saturate: ;
-        --tw-sepia: ;
-        --tw-drop-shadow: ;
-        --tw-backdrop-blur: ;
-        --tw-backdrop-brightness: ;
-        --tw-backdrop-contrast: ;
-        --tw-backdrop-grayscale: ;
-        --tw-backdrop-hue-rotate: ;
-        --tw-backdrop-invert: ;
-        --tw-backdrop-opacity: ;
-        --tw-backdrop-saturate: ;
-        --tw-backdrop-sepia: ;
-        --tw-contain-size: ;
-        --tw-contain-layout: ;
-        --tw-contain-paint: ;
-        --tw-contain-style: ;
-      }
-      ::backdrop {
-        --tw-border-spacing-x: 0;
-        --tw-border-spacing-y: 0;
-        --tw-translate-x: 0;
-        --tw-translate-y: 0;
-        --tw-rotate: 0;
-        --tw-skew-x: 0;
-        --tw-skew-y: 0;
-        --tw-scale-x: 1;
-        --tw-scale-y: 1;
-        --tw-pan-x: ;
-        --tw-pan-y: ;
-        --tw-pinch-zoom: ;
-        --tw-scroll-snap-strictness: proximity;
-        --tw-gradient-from-position: ;
-        --tw-gradient-via-position: ;
-        --tw-gradient-to-position: ;
-        --tw-ordinal: ;
-        --tw-slashed-zero: ;
-        --tw-numeric-figure: ;
-        --tw-numeric-spacing: ;
-        --tw-numeric-fraction: ;
-        --tw-ring-inset: ;
-        --tw-ring-offset-width: 0px;
-        --tw-ring-offset-color: #fff;
-        --tw-ring-color: rgba(59, 130, 246, 0.5);
-        --tw-ring-offset-shadow: 0 0 #0000;
-        --tw-ring-shadow: 0 0 #0000;
-        --tw-shadow: 0 0 #0000;
-        --tw-shadow-colored: 0 0 #0000;
-        --tw-blur: ;
-        --tw-brightness: ;
-        --tw-contrast: ;
-        --tw-grayscale: ;
-        --tw-hue-rotate: ;
-        --tw-invert: ;
-        --tw-saturate: ;
-        --tw-sepia: ;
-        --tw-drop-shadow: ;
-        --tw-backdrop-blur: ;
-        --tw-backdrop-brightness: ;
-        --tw-backdrop-contrast: ;
-        --tw-backdrop-grayscale: ;
-        --tw-backdrop-hue-rotate: ;
-        --tw-backdrop-invert: ;
-        --tw-backdrop-opacity: ;
-        --tw-backdrop-saturate: ;
-        --tw-backdrop-sepia: ;
-        --tw-contain-size: ;
-        --tw-contain-layout: ;
-        --tw-contain-paint: ;
-        --tw-contain-style: ;
-      }
-      #webcrumbs .mb-10 {
-        margin-bottom: 40px;
-      }
-      #webcrumbs .mb-4 {
-        margin-bottom: 16px;
-      }
-      #webcrumbs .mb-8 {
-        margin-bottom: 32px;
-      }
-      #webcrumbs .mt-2 {
-        margin-top: 8px;
-      }
-      #webcrumbs .inline-block {
-        display: inline-block;
-      }
-      #webcrumbs .flex {
-        display: flex;
-      }
-      #webcrumbs .grid {
-        display: grid;
-      }
-      #webcrumbs .h-\[150px\] {
-        height: 150px;
-      }
-      #webcrumbs .h-\[80px\] {
-        height: 80px;
-      }
-      #webcrumbs .min-h-\[600px\] {
-        min-height: 600px;
-      }
-      #webcrumbs .w-\[150px\] {
-        width: 150px;
-      }
-      #webcrumbs .w-\[80px\] {
-        width: 80px;
-      }
-      #webcrumbs .w-\[900px\] {
-        width: 900px;
-      }
-      #webcrumbs .transform {
-        transform: translate(var(--tw-translate-x), var(--tw-translate-y))
-          rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y))
-          scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-      }
-      #webcrumbs .grid-cols-3 {
-        grid-template-columns: repeat(3, minmax(0, 1fr));
-      }
-      #webcrumbs .flex-row {
-        flex-direction: row;
-      }
-      #webcrumbs .items-center {
-        align-items: center;
-      }
-      #webcrumbs .justify-between {
-        justify-content: space-between;
-      }
-      #webcrumbs .gap-4 {
-        gap: 16px;
-      }
-      #webcrumbs .gap-6 {
-        gap: 24px;
-      }
-      #webcrumbs :is(.space-y-6 > :not([hidden]) ~ :not([hidden])) {
-        --tw-space-y-reverse: 0;
-        margin-bottom: calc(24px * var(--tw-space-y-reverse));
-        margin-top: calc(24px * (1 - var(--tw-space-y-reverse)));
-      }
-      #webcrumbs .rounded-full {
-        border-radius: 9999px;
-      }
-      #webcrumbs .rounded-lg {
-        border-radius: 8px;
-      }
-      #webcrumbs .rounded-md {
-        border-radius: 6px;
-      }
-      #webcrumbs .border-4 {
-        border-width: 4px;
-      }
-      #webcrumbs .border-b-4 {
-        border-bottom-width: 4px;
-      }
-      #webcrumbs .border-primary-400 {
-        --tw-border-opacity: 1;
-        border-color: rgb(101 195 199 / var(--tw-border-opacity));
-      }
-      #webcrumbs .bg-white {
-        --tw-bg-opacity: 1;
-        background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-      }
-      #webcrumbs .bg-gradient-to-r {
-        background-image: linear-gradient(to right, var(--tw-gradient-stops));
-      }
-      #webcrumbs .from-primary-100 {
-        --tw-gradient-from: #daf3f3 var(--tw-gradient-from-position);
-        --tw-gradient-to: rgba(218, 243, 243, 0) var(--tw-gradient-to-position);
-        --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
-      }
-      #webcrumbs .to-gray-200 {
-        --tw-gradient-to: #e5e7eb var(--tw-gradient-to-position);
-      }
-      #webcrumbs .object-contain {
-        object-fit: contain;
-      }
-      #webcrumbs .object-cover {
-        object-fit: cover;
-      }
-      #webcrumbs .p-4 {
-        padding: 16px;
-      }
-      #webcrumbs .p-8 {
-        padding: 32px;
-      }
-      #webcrumbs .pb-2 {
-        padding-bottom: 8px;
-      }
-      #webcrumbs .text-center {
-        text-align: center;
-      }
-      #webcrumbs .font-title {
-        font-family:
-          Ubuntu,
-          ui-sans-serif,
-          system-ui,
-          sans-serif,
-          Apple Color Emoji,
-          Segoe UI Emoji,
-          Segoe UI Symbol,
-          Noto Color Emoji;
-      }
-      #webcrumbs .text-2xl {
-        font-size: 27px;
-        line-height: 35.1px;
-      }
-      #webcrumbs .text-4xl {
-        font-size: 40.5px;
-        line-height: 46.574999999999996px;
-      }
-      #webcrumbs .text-lg {
-        font-size: 20.25px;
-        line-height: 30.375px;
-      }
-      #webcrumbs .font-medium {
-        font-weight: 500;
-      }
-      #webcrumbs .font-semibold {
-        font-weight: 600;
-      }
-      #webcrumbs .text-neutral-700 {
-        --tw-text-opacity: 1;
-        color: rgb(112 102 84 / var(--tw-text-opacity));
-      }
-      #webcrumbs .text-neutral-950 {
-        --tw-text-opacity: 1;
-        color: rgb(44 40 33 / var(--tw-text-opacity));
-      }
-      #webcrumbs .shadow-md {
-        --tw-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
-          0 2px 4px -2px rgba(0, 0, 0, 0.1);
-        --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color),
-          0 2px 4px -2px var(--tw-shadow-color);
-      }
-      #webcrumbs .shadow-md,
-      #webcrumbs .shadow-sm {
-        box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
-          var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-      }
-      #webcrumbs .shadow-sm {
-        --tw-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
-        --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
-      }
-      #webcrumbs .shadow-xl {
-        --tw-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
-          0 8px 10px -6px rgba(0, 0, 0, 0.1);
-        --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color),
-          0 8px 10px -6px var(--tw-shadow-color);
-        box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
-          var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-      }
-      #webcrumbs .transition {
-        transition-duration: 0.15s;
-        transition-property: color, background-color, border-color,
-          text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter,
-          backdrop-filter;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-      }
-      #webcrumbs .transition-shadow {
-        transition-duration: 0.15s;
-        transition-property: box-shadow;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-      }
-      #webcrumbs {
-        font-family: Ubuntu !important;
-        font-size: 18px !important;
-      }
-      #webcrumbs .hover\:scale-105:hover {
-        --tw-scale-x: 1.05;
-        --tw-scale-y: 1.05;
-        transform: translate(var(--tw-translate-x), var(--tw-translate-y))
-          rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y))
-          scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-      }
-      #webcrumbs .hover\:shadow-md:hover {
-        --tw-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
-          0 2px 4px -2px rgba(0, 0, 0, 0.1);
-        --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color),
-          0 2px 4px -2px var(--tw-shadow-color);
-        box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
-          var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-      }
-      
-      body {
-        line-height: inherit;
-        padding: 24px;
-        display: flex;
-        flex-direction: column;
-        min-width: 100vw;
-        min-height: 100vh;
-        align-items: center;
-        justify-content: center;
-        background: linear-gradient(135deg, #ffffff, #d4d4d4);
-      }
-    </style>
-  </head>
-  <body>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About</title>
+  <style>
+    @import url(https://fonts.googleapis.com/css2?family=Ubuntu&display=swap);
+
+    *,
+    :after,
+    :before {
+      border: 0 solid #e5e7eb;
+      box-sizing: border-box;
+    }
+
+    :after,
+    :before {
+      --tw-content: "";
+    }
+
+    :host,
+    html {
+      line-height: 1.5;
+      -webkit-text-size-adjust: 100%;
+      font-family:
+        Ubuntu,
+        ui-sans-serif,
+        system-ui,
+        sans-serif,
+        Apple Color Emoji,
+        Segoe UI Emoji,
+        Segoe UI Symbol,
+        Noto Color Emoji;
+      font-feature-settings: normal;
+      font-variation-settings: normal;
+      -moz-tab-size: 4;
+      tab-size: 4;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    body {
+      line-height: inherit;
+      margin: 0;
+    }
+
+    hr {
+      border-top-width: 1px;
+      color: inherit;
+      height: 0;
+    }
+
+    abbr:where([title]) {
+      text-decoration: underline dotted;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-size: inherit;
+      font-weight: inherit;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: inherit;
+    }
+
+    b,
+    strong {
+      font-weight: bolder;
+    }
+
+    code,
+    kbd,
+    pre,
+    samp {
+      font-family:
+        ui-monospace,
+        SFMono-Regular,
+        Menlo,
+        Monaco,
+        Consolas,
+        Liberation Mono,
+        Courier New,
+        monospace;
+      font-feature-settings: normal;
+      font-size: 1em;
+      font-variation-settings: normal;
+    }
+
+    small {
+      font-size: 80%;
+    }
+
+    sub,
+    sup {
+      font-size: 75%;
+      line-height: 0;
+      position: relative;
+      vertical-align: baseline;
+    }
+
+    sub {
+      bottom: -0.25em;
+    }
+
+    sup {
+      top: -0.5em;
+    }
+
+    table {
+      border-collapse: collapse;
+      border-color: inherit;
+      text-indent: 0;
+    }
+
+    button,
+    input,
+    optgroup,
+    select,
+    textarea {
+      color: inherit;
+      font-family: inherit;
+      font-feature-settings: inherit;
+      font-size: 100%;
+      font-variation-settings: inherit;
+      font-weight: inherit;
+      letter-spacing: inherit;
+      line-height: inherit;
+      margin: 0;
+      padding: 0;
+    }
+
+    button,
+    select {
+      text-transform: none;
+    }
+
+    button,
+    input:where([type="button"]),
+    input:where([type="reset"]),
+    input:where([type="submit"]) {
+      -webkit-appearance: button;
+      background-color: transparent;
+      background-image: none;
+    }
+
+    :-moz-focusring {
+      outline: auto;
+    }
+
+    :-moz-ui-invalid {
+      box-shadow: none;
+    }
+
+    progress {
+      vertical-align: baseline;
+    }
+
+    ::-webkit-inner-spin-button,
+    ::-webkit-outer-spin-button {
+      height: auto;
+    }
+
+    [type="search"] {
+      -webkit-appearance: textfield;
+      outline-offset: -2px;
+    }
+
+    ::-webkit-search-decoration {
+      -webkit-appearance: none;
+    }
+
+    ::-webkit-file-upload-button {
+      -webkit-appearance: button;
+      font: inherit;
+    }
+
+    summary {
+      display: list-item;
+    }
+
+    blockquote,
+    dd,
+    dl,
+    figure,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    hr,
+    p,
+    pre {
+      margin: 0;
+    }
+
+    fieldset {
+      margin: 0;
+    }
+
+    fieldset,
+    legend {
+      padding: 0;
+    }
+
+    menu,
+    ol,
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    dialog {
+      padding: 0;
+    }
+
+    textarea {
+      resize: vertical;
+    }
+
+    input::placeholder,
+    textarea::placeholder {
+      color: #9ca3af;
+      opacity: 1;
+    }
+
+    [role="button"],
+    button {
+      cursor: pointer;
+    }
+
+    :disabled {
+      cursor: default;
+    }
+
+    audio,
+    canvas,
+    embed,
+    iframe,
+    img,
+    object,
+    svg,
+    video {
+      display: block;
+      vertical-align: middle;
+    }
+
+    img,
+    video {
+      height: auto;
+      max-width: 100%;
+    }
+
+    [hidden] {
+      display: none;
+    }
+
+    *,
+    :after,
+    :before {
+      --tw-border-spacing-x: 0;
+      --tw-border-spacing-y: 0;
+      --tw-translate-x: 0;
+      --tw-translate-y: 0;
+      --tw-rotate: 0;
+      --tw-skew-x: 0;
+      --tw-skew-y: 0;
+      --tw-scale-x: 1;
+      --tw-scale-y: 1;
+      --tw-pan-x: ;
+      --tw-pan-y: ;
+      --tw-pinch-zoom: ;
+      --tw-scroll-snap-strictness: proximity;
+      --tw-gradient-from-position: ;
+      --tw-gradient-via-position: ;
+      --tw-gradient-to-position: ;
+      --tw-ordinal: ;
+      --tw-slashed-zero: ;
+      --tw-numeric-figure: ;
+      --tw-numeric-spacing: ;
+      --tw-numeric-fraction: ;
+      --tw-ring-inset: ;
+      --tw-ring-offset-width: 0px;
+      --tw-ring-offset-color: #fff;
+      --tw-ring-color: rgba(59, 130, 246, 0.5);
+      --tw-ring-offset-shadow: 0 0 #0000;
+      --tw-ring-shadow: 0 0 #0000;
+      --tw-shadow: 0 0 #0000;
+      --tw-shadow-colored: 0 0 #0000;
+      --tw-blur: ;
+      --tw-brightness: ;
+      --tw-contrast: ;
+      --tw-grayscale: ;
+      --tw-hue-rotate: ;
+      --tw-invert: ;
+      --tw-saturate: ;
+      --tw-sepia: ;
+      --tw-drop-shadow: ;
+      --tw-backdrop-blur: ;
+      --tw-backdrop-brightness: ;
+      --tw-backdrop-contrast: ;
+      --tw-backdrop-grayscale: ;
+      --tw-backdrop-hue-rotate: ;
+      --tw-backdrop-invert: ;
+      --tw-backdrop-opacity: ;
+      --tw-backdrop-saturate: ;
+      --tw-backdrop-sepia: ;
+      --tw-contain-size: ;
+      --tw-contain-layout: ;
+      --tw-contain-paint: ;
+      --tw-contain-style: ;
+    }
+
+    ::backdrop {
+      --tw-border-spacing-x: 0;
+      --tw-border-spacing-y: 0;
+      --tw-translate-x: 0;
+      --tw-translate-y: 0;
+      --tw-rotate: 0;
+      --tw-skew-x: 0;
+      --tw-skew-y: 0;
+      --tw-scale-x: 1;
+      --tw-scale-y: 1;
+      --tw-pan-x: ;
+      --tw-pan-y: ;
+      --tw-pinch-zoom: ;
+      --tw-scroll-snap-strictness: proximity;
+      --tw-gradient-from-position: ;
+      --tw-gradient-via-position: ;
+      --tw-gradient-to-position: ;
+      --tw-ordinal: ;
+      --tw-slashed-zero: ;
+      --tw-numeric-figure: ;
+      --tw-numeric-spacing: ;
+      --tw-numeric-fraction: ;
+      --tw-ring-inset: ;
+      --tw-ring-offset-width: 0px;
+      --tw-ring-offset-color: #fff;
+      --tw-ring-color: rgba(59, 130, 246, 0.5);
+      --tw-ring-offset-shadow: 0 0 #0000;
+      --tw-ring-shadow: 0 0 #0000;
+      --tw-shadow: 0 0 #0000;
+      --tw-shadow-colored: 0 0 #0000;
+      --tw-blur: ;
+      --tw-brightness: ;
+      --tw-contrast: ;
+      --tw-grayscale: ;
+      --tw-hue-rotate: ;
+      --tw-invert: ;
+      --tw-saturate: ;
+      --tw-sepia: ;
+      --tw-drop-shadow: ;
+      --tw-backdrop-blur: ;
+      --tw-backdrop-brightness: ;
+      --tw-backdrop-contrast: ;
+      --tw-backdrop-grayscale: ;
+      --tw-backdrop-hue-rotate: ;
+      --tw-backdrop-invert: ;
+      --tw-backdrop-opacity: ;
+      --tw-backdrop-saturate: ;
+      --tw-backdrop-sepia: ;
+      --tw-contain-size: ;
+      --tw-contain-layout: ;
+      --tw-contain-paint: ;
+      --tw-contain-style: ;
+    }
+
+    #webcrumbs .mb-10 {
+      margin-bottom: 40px;
+    }
+
+    #webcrumbs .mb-4 {
+      margin-bottom: 16px;
+    }
+
+    #webcrumbs .mb-8 {
+      margin-bottom: 32px;
+    }
+
+    #webcrumbs .mt-2 {
+      margin-top: 8px;
+    }
+
+    #webcrumbs .inline-block {
+      display: inline-block;
+    }
+
+    #webcrumbs .flex {
+      display: flex;
+    }
+
+    #webcrumbs .grid {
+      display: grid;
+    }
+
+    #webcrumbs .h-\[150px\] {
+      height: 150px;
+    }
+
+    #webcrumbs .h-\[80px\] {
+      height: 80px;
+    }
+
+    #webcrumbs .min-h-\[600px\] {
+      min-height: 600px;
+    }
+
+    #webcrumbs .w-\[150px\] {
+      width: 150px;
+    }
+
+    #webcrumbs .w-\[80px\] {
+      width: 80px;
+    }
+
+    #webcrumbs .w-\[900px\] {
+      width: 900px;
+    }
+
+    #webcrumbs .transform {
+      transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+    }
+
+    #webcrumbs .grid-cols-3 {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    #webcrumbs .flex-row {
+      flex-direction: row;
+    }
+
+    #webcrumbs .items-center {
+      align-items: center;
+    }
+
+    #webcrumbs .justify-between {
+      justify-content: space-between;
+    }
+
+    #webcrumbs .gap-4 {
+      gap: 16px;
+    }
+
+    #webcrumbs .gap-6 {
+      gap: 24px;
+    }
+
+    #webcrumbs :is(.space-y-6 > :not([hidden]) ~ :not([hidden])) {
+      --tw-space-y-reverse: 0;
+      margin-bottom: calc(24px * var(--tw-space-y-reverse));
+      margin-top: calc(24px * (1 - var(--tw-space-y-reverse)));
+    }
+
+    #webcrumbs .rounded-full {
+      border-radius: 9999px;
+    }
+
+    #webcrumbs .rounded-lg {
+      border-radius: 8px;
+    }
+
+    #webcrumbs .rounded-md {
+      border-radius: 6px;
+    }
+
+    #webcrumbs .border-4 {
+      border-width: 4px;
+    }
+
+    #webcrumbs .border-b-4 {
+      border-bottom-width: 4px;
+    }
+
+    #webcrumbs .border-primary-400 {
+      --tw-border-opacity: 1;
+      border-color: rgb(101 195 199 / var(--tw-border-opacity));
+    }
+
+    #webcrumbs .bg-white {
+      --tw-bg-opacity: 1;
+      background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+    }
+
+    #webcrumbs .bg-gradient-to-r {
+      background-image: linear-gradient(to right, var(--tw-gradient-stops));
+    }
+
+    #webcrumbs .from-primary-100 {
+      --tw-gradient-from: #daf3f3 var(--tw-gradient-from-position);
+      --tw-gradient-to: rgba(218, 243, 243, 0) var(--tw-gradient-to-position);
+      --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+    }
+
+    #webcrumbs .to-gray-200 {
+      --tw-gradient-to: #e5e7eb var(--tw-gradient-to-position);
+    }
+
+    #webcrumbs .object-contain {
+      object-fit: contain;
+    }
+
+    #webcrumbs .object-cover {
+      object-fit: cover;
+    }
+
+    #webcrumbs .p-4 {
+      padding: 16px;
+    }
+
+    #webcrumbs .p-8 {
+      padding: 32px;
+    }
+
+    #webcrumbs .pb-2 {
+      padding-bottom: 8px;
+    }
+
+    #webcrumbs .text-center {
+      text-align: center;
+    }
+
+    #webcrumbs .font-title {
+      font-family:
+        Ubuntu,
+        ui-sans-serif,
+        system-ui,
+        sans-serif,
+        Apple Color Emoji,
+        Segoe UI Emoji,
+        Segoe UI Symbol,
+        Noto Color Emoji;
+    }
+
+    #webcrumbs .text-2xl {
+      font-size: 27px;
+      line-height: 35.1px;
+    }
+
+    #webcrumbs .text-4xl {
+      font-size: 40.5px;
+      line-height: 46.574999999999996px;
+    }
+
+    #webcrumbs .text-lg {
+      font-size: 20.25px;
+      line-height: 30.375px;
+    }
+
+    #webcrumbs .font-medium {
+      font-weight: 500;
+    }
+
+    #webcrumbs .font-semibold {
+      font-weight: 600;
+    }
+
+    #webcrumbs .text-neutral-700 {
+      --tw-text-opacity: 1;
+      color: rgb(112 102 84 / var(--tw-text-opacity));
+    }
+
+    #webcrumbs .text-neutral-950 {
+      --tw-text-opacity: 1;
+      color: rgb(44 40 33 / var(--tw-text-opacity));
+    }
+
+    #webcrumbs .shadow-md {
+      --tw-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+        0 2px 4px -2px rgba(0, 0, 0, 0.1);
+      --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color),
+        0 2px 4px -2px var(--tw-shadow-color);
+    }
+
+    #webcrumbs .shadow-md,
+    #webcrumbs .shadow-sm {
+      box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+        var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+    }
+
+    #webcrumbs .shadow-sm {
+      --tw-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+      --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
+    }
+
+    #webcrumbs .shadow-xl {
+      --tw-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+        0 8px 10px -6px rgba(0, 0, 0, 0.1);
+      --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color),
+        0 8px 10px -6px var(--tw-shadow-color);
+      box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+        var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+    }
+
+    #webcrumbs .transition {
+      transition-duration: 0.15s;
+      transition-property: color, background-color, border-color,
+        text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter,
+        backdrop-filter;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    #webcrumbs .transition-shadow {
+      transition-duration: 0.15s;
+      transition-property: box-shadow;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    #webcrumbs {
+      font-family: Ubuntu !important;
+      font-size: 18px !important;
+    }
+
+    #webcrumbs .hover\:scale-105:hover {
+      --tw-scale-x: 1.05;
+      --tw-scale-y: 1.05;
+      transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+    }
+
+    #webcrumbs .hover\:shadow-md:hover {
+      --tw-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+        0 2px 4px -2px rgba(0, 0, 0, 0.1);
+      --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color),
+        0 2px 4px -2px var(--tw-shadow-color);
+      box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+        var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+    }
+
+    body {
+      line-height: inherit;
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      min-width: 100vw;
+      min-height: 100vh;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, #ffffff, #d4d4d4);
+    }
+  </style>
+</head>
+
+<body>
   <div id="webcrumbs">
-    <div class="w-full max-w-[900px] mx-auto min-h-[600px] bg-gradient-to-r from-primary-100 to-gray-200 rounded-lg shadow-xl p-8"> <header class="text-center mb-12"> <h1 class="text-4xl font-title text-neutral-950 animate-fade-in-up mb-2">JB and Family</h1> <p class="text-neutral-700 animate-fade-in">Welcome to our family page!</p> </header> <main class="space-y-10"> <section> <h2 class="text-2xl font-semibold text-neutral-950 mb-6 border-b-4 border-primary-400 inline-block pb-2"> About Us </h2> <p class="text-neutral-700 leading-relaxed"> We are the JB family, a group of close-knit individuals who love spending time together, exploring new places, and cherishing every moment life has to offer. Our page is a little window into our world, from adventures to everyday life. </p> </section> <section> <h2 class="text-2xl font-semibold text-neutral-950 mb-6 border-b-4 border-primary-400 inline-block pb-2"> Family Members </h2> <div class="grid grid-cols-1 sm:grid-cols-2 gap-6"> <div class="flex items-center gap-4 p-4 bg-white shadow-sm rounded-md hover:shadow-md transition-shadow"> <img src="https://tools-api.webcrumbs.org/image-placeholder/80/80/avatars/1" alt="Profile" class="w-[80px] h-[80px] rounded-full border-4 border-primary-400 object-contain"/> <div> <h3 class="text-lg font-medium text-neutral-950">Jivanbbhai Chavda</h3> <p class="text-neutral-700">The steadfast and loving leader of our family.</p> </div> </div><div class="flex items-center gap-4 p-4 bg-white shadow-sm rounded-md hover:shadow-md transition-shadow"> <img src="https://tools-api.webcrumbs.org/image-placeholder/80/80/avatars/2" alt="Profile" class="w-[80px] h-[80px] rounded-full border-4 border-primary-400 object-contain"/> <div> <h3 class="text-lg font-medium text-neutral-950">Batukbhai Chavda</h3> <p class="text-neutral-700">The glue that keeps the family together with his warmth.</p> </div> </div><div class="flex items-center gap-4 p-4 bg-white shadow-sm rounded-md hover:shadow-md transition-shadow"> <img src="https://tools-api.webcrumbs.org/image-placeholder/80/80/avatars/3" alt="Profile" class="w-[80px] h-[80px] rounded-full border-4 border-primary-400 object-contain"/> <div> <h3 class="text-lg font-medium text-neutral-950">Madhuben Chavda</h3> <p class="text-neutral-700">Full of energy, creativity and curiosity.</p> </div> </div><div class="flex items-center gap-4 p-4 bg-white shadow-sm rounded-md hover:shadow-md transition-shadow"> <img src="https://tools-api.webcrumbs.org/image-placeholder/80/80/avatars/4" alt="Profile" class="w-[80px] h-[80px] rounded-full border-4 border-primary-400 object-contain"/> <div> <h3 class="text-lg font-medium text-neutral-950">Manishaben Chavda</h3> <p class="text-neutral-700">The creative one with a passion for art.</p> </div> </div><div class="flex items-center gap-4 p-4 bg-white shadow-sm rounded-md hover:shadow-md transition-shadow"> <img src="https://tools-api.webcrumbs.org/image-placeholder/80/80/avatars/5" alt="Profile" class="w-[80px] h-[80px] rounded-full border-4 border-primary-400 object-contain"/> <div> <h3 class="text-lg font-medium text-neutral-950">Gunjanben Chavda</h3> <p class="text-neutral-700">A budding musician with a love for melodies.</p> </div> </div><div class="flex items-center gap-4 p-4 bg-white shadow-sm rounded-md hover:shadow-md transition-shadow"> <img src="https://tools-api.webcrumbs.org/image-placeholder/80/80/avatars/6" alt="Profile" class="w-[80px] h-[80px] rounded-full border-4 border-primary-400 object-contain"/> <div> <h3 class="text-lg font-medium text-neutral-950">Rhythmben Chavda</h3> <p class="text-neutral-700">Silent and reader </p> </div> </div><div class="flex items-center gap-4 p-4 bg-white shadow-sm rounded-md hover:shadow-md transition-shadow"> <img src="https://tools-api.webcrumbs.org/image-placeholder/80/80/avatars/7" alt="Profile" class="w-[80px] h-[80px] rounded-full border-4 border-primary-400 object-contain"/> <div> <h3 class="text-lg font-medium text-neutral-950">Sujitbhai Chavda</h3> <p class="text-neutral-700">The tech-savvy problem </p> </div> </div><div class="flex items-center gap-4 p-4 bg-white shadow-sm rounded-md hover:shadow-md transition-shadow"> <img src="https://tools-api.webcrumbs.org/image-placeholder/80/80/avatars/8" alt="Profile" class="w-[80px] h-[80px] rounded-full border-4 border-primary-400 object-contain"/> <div> <h3 class="text-lg font-medium text-neutral-950">Nirant Chavda</h3> <p class="text-neutral-700">Always adventurous and ready for a challenge.</p> </div> </div> </div> </section> <section> <h2 class="text-2xl font-semibold text-neutral-950 mb-6 border-b-4 border-primary-400 inline-block pb-2"> Family Photos </h2> <div class="grid grid-cols-2 sm:grid-cols-3 gap-6"> <img src="https://tools-api.webcrumbs.org/image-placeholder/150/150/family/1" alt="Family Photo 1" class="w-full h-[150px] rounded-lg object-cover shadow-md transform transition hover:scale-105"/><img src="https://tools-api.webcrumbs.org/image-placeholder/150/150/family/2" alt="Family Photo 2" class="w-full h-[150px] rounded-lg object-cover shadow-md transform transition hover:scale-105"/><img src="https://tools-api.webcrumbs.org/image-placeholder/150/150/family/3" alt="Family Photo 3" class="w-full h-[150px] rounded-lg object-cover shadow-md transform transition hover:scale-105"/> </div> </section> </main> </div>
+    <div
+      class="w-full max-w-[900px] mx-auto min-h-[600px] bg-gradient-to-r from-primary-100 to-gray-200 rounded-lg shadow-xl p-8">
+      <header class="text-center mb-12">
+        <h1 class="text-4xl font-title text-neutral-950 animate-fade-in-up mb-2">JB and Family</h1>
+        <p class="text-neutral-700 animate-fade-in">Welcome to our family page!</p>
+      </header>
+      <main class="space-y-10">
+        <section>
+          <h2 class="text-2xl font-semibold text-neutral-950 mb-6 border-b-4 border-primary-400 inline-block pb-2">
+            About Us </h2>
+          <p class="text-neutral-700 leading-relaxed"> We are the JB family, a group of close-knit individuals who love
+            spending time together, exploring new places, and cherishing every moment life has to offer. Our page is a
+            little window into our world, from adventures to everyday life. </p>
+        </section>
+        <section>
+          <h2 class="text-2xl font-semibold text-neutral-950 mb-6 border-b-4 border-primary-400 inline-block pb-2">
+            Family Members </h2>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            <div class="flex items-center gap-4 p-4 bg-white shadow-sm rounded-md hover:shadow-md transition-shadow">
+              <img src="https://tools-api.webcrumbs.org/image-placeholder/80/80/avatars/1" alt="Profile"
+                class="w-[80px] h-[80px] rounded-full border-4 border-primary-400 object-contain" />
+              <div>
+                <h3 class="text-lg font-medium text-neutral-950">Jivanbbhai Chavda</h3>
+                <p class="text-neutral-700">The steadfast and loving leader of our family.</p>
+              </div>
+            </div>
+            <div class="flex items-center gap-4 p-4 bg-white shadow-sm rounded-md hover:shadow-md transition-shadow">
+              <img src="https://tools-api.webcrumbs.org/image-placeholder/80/80/avatars/2" alt="Profile"
+                class="w-[80px] h-[80px] rounded-full border-4 border-primary-400 object-contain" />
+              <div>
+                <h3 class="text-lg font-medium text-neutral-950">Batukbhai Chavda</h3>
+                <p class="text-neutral-700">The glue that keeps the family together with his warmth.</p>
+              </div>
+            </div>
+            <div class="flex items-center gap-4 p-4 bg-white shadow-sm rounded-md hover:shadow-md transition-shadow">
+              <img src="https://tools-api.webcrumbs.org/image-placeholder/80/80/avatars/3" alt="Profile"
+                class="w-[80px] h-[80px] rounded-full border-4 border-primary-400 object-contain" />
+              <div>
+                <h3 class="text-lg font-medium text-neutral-950">Madhuben Chavda</h3>
+                <p class="text-neutral-700">Full of energy, creativity and curiosity.</p>
+              </div>
+            </div>
+            <div class="flex items-center gap-4 p-4 bg-white shadow-sm rounded-md hover:shadow-md transition-shadow">
+              <img src="https://tools-api.webcrumbs.org/image-placeholder/80/80/avatars/4" alt="Profile"
+                class="w-[80px] h-[80px] rounded-full border-4 border-primary-400 object-contain" />
+              <div>
+                <h3 class="text-lg font-medium text-neutral-950">Manishaben Chavda</h3>
+                <p class="text-neutral-700">The creative one with a passion for art.</p>
+              </div>
+            </div>
+            <div class="flex items-center gap-4 p-4 bg-white shadow-sm rounded-md hover:shadow-md transition-shadow">
+              <img src="https://tools-api.webcrumbs.org/image-placeholder/80/80/avatars/5" alt="Profile"
+                class="w-[80px] h-[80px] rounded-full border-4 border-primary-400 object-contain" />
+              <div>
+                <h3 class="text-lg font-medium text-neutral-950">Gunjanben Chavda</h3>
+                <p class="text-neutral-700">A budding musician with a love for melodies.</p>
+              </div>
+            </div>
+            <div class="flex items-center gap-4 p-4 bg-white shadow-sm rounded-md hover:shadow-md transition-shadow">
+              <img src="https://tools-api.webcrumbs.org/image-placeholder/80/80/avatars/6" alt="Profile"
+                class="w-[80px] h-[80px] rounded-full border-4 border-primary-400 object-contain" />
+              <div>
+                <h3 class="text-lg font-medium text-neutral-950">Rhythmben Chavda</h3>
+                <p class="text-neutral-700">Silent and reader </p>
+              </div>
+            </div>
+            <div class="flex items-center gap-4 p-4 bg-white shadow-sm rounded-md hover:shadow-md transition-shadow">
+              <img src="https://tools-api.webcrumbs.org/image-placeholder/80/80/avatars/7" alt="Profile"
+                class="w-[80px] h-[80px] rounded-full border-4 border-primary-400 object-contain" />
+              <div>
+                <h3 class="text-lg font-medium text-neutral-950">Sujitbhai Chavda</h3>
+                <p class="text-neutral-700">The tech-savvy problem </p>
+              </div>
+            </div>
+            <div class="flex items-center gap-4 p-4 bg-white shadow-sm rounded-md hover:shadow-md transition-shadow">
+              <img src="https://tools-api.webcrumbs.org/image-placeholder/80/80/avatars/8" alt="Profile"
+                class="w-[80px] h-[80px] rounded-full border-4 border-primary-400 object-contain" />
+              <div>
+                <h3 class="text-lg font-medium text-neutral-950">Nirant Chavda</h3>
+                <p class="text-neutral-700">Always adventurous and ready for a challenge.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section>
+          <h2 class="text-2xl font-semibold text-neutral-950 mb-6 border-b-4 border-primary-400 inline-block pb-2">
+            Family Photos </h2>
+          <div class="grid grid-cols-2 sm:grid-cols-3 gap-6"> <img
+              src="https://tools-api.webcrumbs.org/image-placeholder/150/150/family/1" alt="Family Photo 1"
+              class="w-full h-[150px] rounded-lg object-cover shadow-md transform transition hover:scale-105" /><img
+              src="https://tools-api.webcrumbs.org/image-placeholder/150/150/family/2" alt="Family Photo 2"
+              class="w-full h-[150px] rounded-lg object-cover shadow-md transform transition hover:scale-105" /><img
+              src="https://tools-api.webcrumbs.org/image-placeholder/150/150/family/3" alt="Family Photo 3"
+              class="w-full h-[150px] rounded-lg object-cover shadow-md transform transition hover:scale-105" /> </div>
+        </section>
+      </main>
+    </div>
 
 
   </div>
-  </body>
+</body>
+
 </html>
