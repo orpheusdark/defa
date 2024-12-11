@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Webcrumbs Plugin</title>
+    <title>About</title>
     <style>
       @import url(https://fonts.googleapis.com/css2?family=Ubuntu&display=swap);
       
@@ -345,6 +345,9 @@
       #webcrumbs .mt-2 {
         margin-top: 8px;
       }
+      #webcrumbs .inline-block {
+        display: inline-block;
+      }
       #webcrumbs .flex {
         display: flex;
       }
@@ -369,6 +372,11 @@
       #webcrumbs .w-\[900px\] {
         width: 900px;
       }
+      #webcrumbs .transform {
+        transform: translate(var(--tw-translate-x), var(--tw-translate-y))
+          rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y))
+          scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+      }
       #webcrumbs .grid-cols-3 {
         grid-template-columns: repeat(3, minmax(0, 1fr));
       }
@@ -384,10 +392,13 @@
       #webcrumbs .gap-4 {
         gap: 16px;
       }
-      #webcrumbs :is(.space-y-4 > :not([hidden]) ~ :not([hidden])) {
+      #webcrumbs .gap-6 {
+        gap: 24px;
+      }
+      #webcrumbs :is(.space-y-6 > :not([hidden]) ~ :not([hidden])) {
         --tw-space-y-reverse: 0;
-        margin-bottom: calc(16px * var(--tw-space-y-reverse));
-        margin-top: calc(16px * (1 - var(--tw-space-y-reverse)));
+        margin-bottom: calc(24px * var(--tw-space-y-reverse));
+        margin-top: calc(24px * (1 - var(--tw-space-y-reverse)));
       }
       #webcrumbs .rounded-full {
         border-radius: 9999px;
@@ -398,9 +409,30 @@
       #webcrumbs .rounded-md {
         border-radius: 6px;
       }
+      #webcrumbs .border-4 {
+        border-width: 4px;
+      }
+      #webcrumbs .border-b-4 {
+        border-bottom-width: 4px;
+      }
+      #webcrumbs .border-primary-400 {
+        --tw-border-opacity: 1;
+        border-color: rgb(101 195 199 / var(--tw-border-opacity));
+      }
       #webcrumbs .bg-white {
         --tw-bg-opacity: 1;
         background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+      }
+      #webcrumbs .bg-gradient-to-r {
+        background-image: linear-gradient(to right, var(--tw-gradient-stops));
+      }
+      #webcrumbs .from-primary-100 {
+        --tw-gradient-from: #daf3f3 var(--tw-gradient-from-position);
+        --tw-gradient-to: rgba(218, 243, 243, 0) var(--tw-gradient-to-position);
+        --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+      }
+      #webcrumbs .to-gray-200 {
+        --tw-gradient-to: #e5e7eb var(--tw-gradient-to-position);
       }
       #webcrumbs .object-contain {
         object-fit: contain;
@@ -408,8 +440,14 @@
       #webcrumbs .object-cover {
         object-fit: cover;
       }
+      #webcrumbs .p-4 {
+        padding: 16px;
+      }
       #webcrumbs .p-8 {
         padding: 32px;
+      }
+      #webcrumbs .pb-2 {
+        padding-bottom: 8px;
       }
       #webcrumbs .text-center {
         text-align: center;
@@ -451,17 +489,59 @@
         --tw-text-opacity: 1;
         color: rgb(44 40 33 / var(--tw-text-opacity));
       }
-      #webcrumbs .shadow-lg {
-        --tw-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
-          0 4px 6px -4px rgba(0, 0, 0, 0.1);
-        --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color),
-          0 4px 6px -4px var(--tw-shadow-color);
+      #webcrumbs .shadow-md {
+        --tw-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+          0 2px 4px -2px rgba(0, 0, 0, 0.1);
+        --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color),
+          0 2px 4px -2px var(--tw-shadow-color);
+      }
+      #webcrumbs .shadow-md,
+      #webcrumbs .shadow-sm {
         box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
           var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+      }
+      #webcrumbs .shadow-sm {
+        --tw-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+        --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
+      }
+      #webcrumbs .shadow-xl {
+        --tw-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+          0 8px 10px -6px rgba(0, 0, 0, 0.1);
+        --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color),
+          0 8px 10px -6px var(--tw-shadow-color);
+        box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+          var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+      }
+      #webcrumbs .transition {
+        transition-duration: 0.15s;
+        transition-property: color, background-color, border-color,
+          text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter,
+          backdrop-filter;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      }
+      #webcrumbs .transition-shadow {
+        transition-duration: 0.15s;
+        transition-property: box-shadow;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
       }
       #webcrumbs {
         font-family: Ubuntu !important;
         font-size: 18px !important;
+      }
+      #webcrumbs .hover\:scale-105:hover {
+        --tw-scale-x: 1.05;
+        --tw-scale-y: 1.05;
+        transform: translate(var(--tw-translate-x), var(--tw-translate-y))
+          rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y))
+          scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+      }
+      #webcrumbs .hover\:shadow-md:hover {
+        --tw-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+          0 2px 4px -2px rgba(0, 0, 0, 0.1);
+        --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color),
+          0 2px 4px -2px var(--tw-shadow-color);
+        box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+          var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
       }
       
       body {
@@ -479,7 +559,7 @@
   </head>
   <body>
   <div id="webcrumbs">
-    <div class="w-[900px] min-h-[600px] bg-white rounded-lg shadow-lg p-8"> <header class="text-center mb-10"> <h1 class="text-4xl font-title text-neutral-950">JB and Family</h1> <p class="text-neutral-700 mt-2">Welcome to our family page!</p> </header> <main> <section class="mb-8"> <h2 class="text-2xl font-semibold text-neutral-950 mb-4">About Us</h2> <p class="text-neutral-700"> We are the JB family, a group of close-knit individuals who love spending time together, exploring new places, and cherishing every moment life has to offer. Our page is a little window into our world, from adventures to everyday life. </p> </section> <section class="mb-8"> <h2 class="text-2xl font-semibold text-neutral-950 mb-4">Family Members</h2> <ul class="space-y-4"> <li class="flex items-center gap-4"> <img src="https://tools-api.webcrumbs.org/image-placeholder/80/80/avatars/1" alt="Profile" class="w-[80px] h-[80px] rounded-full object-contain"/> <div> <h3 class="text-lg font-medium text-neutral-950">John B.</h3> <p class="text-neutral-700">The steadfast and loving leader of our family.</p> </div> </li> <li class="flex items-center gap-4"> <img src="https://tools-api.webcrumbs.org/image-placeholder/80/80/avatars/2" alt="Profile" class="w-[80px] h-[80px] rounded-full object-contain"/> <div> <h3 class="text-lg font-medium text-neutral-950">Jane B.</h3> <p class="text-neutral-700">The glue that keeps the family together with her warmth.</p> </div> </li> <li class="flex items-center gap-4"> <img src="https://tools-api.webcrumbs.org/image-placeholder/80/80/avatars/3" alt="Profile" class="w-[80px] h-[80px] rounded-full object-contain"/> <div> <h3 class="text-lg font-medium text-neutral-950">Jamie B.</h3> <p class="text-neutral-700">The youngest, full of energy and curiosity.</p> </div> </li> </ul> </section> <section> <h2 class="text-2xl font-semibold text-neutral-950 mb-4">Family Photos</h2> <div class="grid grid-cols-3 gap-4"> <img src="https://tools-api.webcrumbs.org/image-placeholder/150/150/family/1" alt="Family Photo 1" class="w-[150px] h-[150px] rounded-md object-cover"/> <img src="https://tools-api.webcrumbs.org/image-placeholder/150/150/family/2" alt="Family Photo 2" class="w-[150px] h-[150px] rounded-md object-cover"/> <img src="https://tools-api.webcrumbs.org/image-placeholder/150/150/family/3" alt="Family Photo 3" class="w-[150px] h-[150px] rounded-md object-cover"/> </div> </section> </main> </div>
+    <div class="w-full max-w-[900px] mx-auto min-h-[600px] bg-gradient-to-r from-primary-100 to-gray-200 rounded-lg shadow-xl p-8"> <header class="text-center mb-12"> <h1 class="text-4xl font-title text-neutral-950 animate-fade-in-up mb-2">JB and Family</h1> <p class="text-neutral-700 animate-fade-in">Welcome to our family page!</p> </header> <main class="space-y-10"> <section> <h2 class="text-2xl font-semibold text-neutral-950 mb-6 border-b-4 border-primary-400 inline-block pb-2"> About Us </h2> <p class="text-neutral-700 leading-relaxed"> We are the JB family, a group of close-knit individuals who love spending time together, exploring new places, and cherishing every moment life has to offer. Our page is a little window into our world, from adventures to everyday life. </p> </section> <section> <h2 class="text-2xl font-semibold text-neutral-950 mb-6 border-b-4 border-primary-400 inline-block pb-2"> Family Members </h2> <div class="grid grid-cols-1 sm:grid-cols-2 gap-6"> <div class="flex items-center gap-4 p-4 bg-white shadow-sm rounded-md hover:shadow-md transition-shadow"> <img src="https://tools-api.webcrumbs.org/image-placeholder/80/80/avatars/1" alt="Profile" class="w-[80px] h-[80px] rounded-full border-4 border-primary-400 object-contain"/> <div> <h3 class="text-lg font-medium text-neutral-950">Jivanbbhai Chavda</h3> <p class="text-neutral-700">The steadfast and loving leader of our family.</p> </div> </div><div class="flex items-center gap-4 p-4 bg-white shadow-sm rounded-md hover:shadow-md transition-shadow"> <img src="https://tools-api.webcrumbs.org/image-placeholder/80/80/avatars/2" alt="Profile" class="w-[80px] h-[80px] rounded-full border-4 border-primary-400 object-contain"/> <div> <h3 class="text-lg font-medium text-neutral-950">Batukbhai Chavda</h3> <p class="text-neutral-700">The glue that keeps the family together with his warmth.</p> </div> </div><div class="flex items-center gap-4 p-4 bg-white shadow-sm rounded-md hover:shadow-md transition-shadow"> <img src="https://tools-api.webcrumbs.org/image-placeholder/80/80/avatars/3" alt="Profile" class="w-[80px] h-[80px] rounded-full border-4 border-primary-400 object-contain"/> <div> <h3 class="text-lg font-medium text-neutral-950">Madhuben Chavda</h3> <p class="text-neutral-700">Full of energy, creativity and curiosity.</p> </div> </div><div class="flex items-center gap-4 p-4 bg-white shadow-sm rounded-md hover:shadow-md transition-shadow"> <img src="https://tools-api.webcrumbs.org/image-placeholder/80/80/avatars/4" alt="Profile" class="w-[80px] h-[80px] rounded-full border-4 border-primary-400 object-contain"/> <div> <h3 class="text-lg font-medium text-neutral-950">Manishaben Chavda</h3> <p class="text-neutral-700">The creative one with a passion for art.</p> </div> </div><div class="flex items-center gap-4 p-4 bg-white shadow-sm rounded-md hover:shadow-md transition-shadow"> <img src="https://tools-api.webcrumbs.org/image-placeholder/80/80/avatars/5" alt="Profile" class="w-[80px] h-[80px] rounded-full border-4 border-primary-400 object-contain"/> <div> <h3 class="text-lg font-medium text-neutral-950">Gunjanben Chavda</h3> <p class="text-neutral-700">A budding musician with a love for melodies.</p> </div> </div><div class="flex items-center gap-4 p-4 bg-white shadow-sm rounded-md hover:shadow-md transition-shadow"> <img src="https://tools-api.webcrumbs.org/image-placeholder/80/80/avatars/6" alt="Profile" class="w-[80px] h-[80px] rounded-full border-4 border-primary-400 object-contain"/> <div> <h3 class="text-lg font-medium text-neutral-950">Rhythmben Chavda</h3> <p class="text-neutral-700">Silent and reader </p> </div> </div><div class="flex items-center gap-4 p-4 bg-white shadow-sm rounded-md hover:shadow-md transition-shadow"> <img src="https://tools-api.webcrumbs.org/image-placeholder/80/80/avatars/7" alt="Profile" class="w-[80px] h-[80px] rounded-full border-4 border-primary-400 object-contain"/> <div> <h3 class="text-lg font-medium text-neutral-950">Sujitbhai Chavda</h3> <p class="text-neutral-700">The tech-savvy problem </p> </div> </div><div class="flex items-center gap-4 p-4 bg-white shadow-sm rounded-md hover:shadow-md transition-shadow"> <img src="https://tools-api.webcrumbs.org/image-placeholder/80/80/avatars/8" alt="Profile" class="w-[80px] h-[80px] rounded-full border-4 border-primary-400 object-contain"/> <div> <h3 class="text-lg font-medium text-neutral-950">Nirant Chavda</h3> <p class="text-neutral-700">Always adventurous and ready for a challenge.</p> </div> </div> </div> </section> <section> <h2 class="text-2xl font-semibold text-neutral-950 mb-6 border-b-4 border-primary-400 inline-block pb-2"> Family Photos </h2> <div class="grid grid-cols-2 sm:grid-cols-3 gap-6"> <img src="https://tools-api.webcrumbs.org/image-placeholder/150/150/family/1" alt="Family Photo 1" class="w-full h-[150px] rounded-lg object-cover shadow-md transform transition hover:scale-105"/><img src="https://tools-api.webcrumbs.org/image-placeholder/150/150/family/2" alt="Family Photo 2" class="w-full h-[150px] rounded-lg object-cover shadow-md transform transition hover:scale-105"/><img src="https://tools-api.webcrumbs.org/image-placeholder/150/150/family/3" alt="Family Photo 3" class="w-full h-[150px] rounded-lg object-cover shadow-md transform transition hover:scale-105"/> </div> </section> </main> </div>
 
 
   </div>
